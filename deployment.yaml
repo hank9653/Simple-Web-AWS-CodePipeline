@@ -5,8 +5,8 @@ metadata:
  labels:
    app: web
 spec:
- containers:
-   – name: hello
-     image: GoHelloWorld
+  containers:
+   - name: hello
+     image: go-hello-world
      ports:
-       – containerPort: 80
+      - containerPort: 80
