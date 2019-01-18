@@ -4,7 +4,8 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: GoHelloWorld
+      tag: go-hello-world
+      registry: 127.0.0.1:34032
 - name: publish
   steps:
   - applyYamlConfig:
