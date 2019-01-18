@@ -5,6 +5,7 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: go-hello-world
+      pushRemote: true
       registry: 127.0.0.1:34032
 - name: publish
   steps:
