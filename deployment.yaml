@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: go-simple-site
+ labels:
+   app: web
+spec:
+ containers:
+   – name: hello
+     image: GoHelloWorld
+     ports:
+       – containerPort: 80
