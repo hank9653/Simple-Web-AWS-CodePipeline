@@ -1,0 +1,13 @@
+stages:
+- name: build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: go-hello-world
+      registry: 127.0.0.1:34032
+- name: publish
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+timeout: 60
